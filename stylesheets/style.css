@@ -1,0 +1,72 @@
+@import url("owfont-regular.min.css");
+
+html, body {
+  margin: 0;
+  font: normal 16px Helvetica, Arial, sans-serif;
+  color: #333;
+  background: #402a22;
+}
+
+main {
+  width: 600px;
+  padding: 25px;
+  margin: 0 auto;
+  background: white;
+}
+
+article {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+}
+
+#weather {
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  z-index: 2;
+  padding: 15px;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  transition: bottom ease 400ms, left ease 400ms;
+  border-top-right-radius: 18px;
+}
+
+#weather.slide {
+  bottom: 0;
+  left: 0;
+}
+
+#map img {
+  display: block;
+}
+
+#map p {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  margin: -10px 0 0 0;
+  text-align: center;
+
+}
+ h2, h3, p {
+   margin: 0;
+ }
+
+ h2 {
+   padding: 0 0 10px 0;
+ }
+
+ h3 {
+   display: inline-block;
+   padding: 0 20px 0 0 ;
+ }
+
+ #weather p {
+   display: inline-block;
+ }
+
+
+ i {width: 20px; height: 20px;}
